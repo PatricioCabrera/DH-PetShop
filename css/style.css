@@ -195,6 +195,30 @@ h5{
     justify-content: center;
 }
 
+button{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #F0A83E;
+    border-radius: 1.5rem;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.9rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-right: 1rem;
+}
+
+.reset{
+    background-color: gray;
+}
+
 .footer-top{
     padding: 0 1.5rem;
     background-color: #F0A83E;
