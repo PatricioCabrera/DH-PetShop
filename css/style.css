@@ -32,6 +32,7 @@ h5{
     background-color: #222222;
     color: white;
     justify-content: space-between;
+    padding: 0 9rem;
 }
 
 .top-bar ul{
@@ -56,6 +57,10 @@ h5{
     color: white;
     font-size: 1.8rem;
     height: 62px;
+}
+
+.navbar img{
+    margin-left: 1rem;
 }
 
 .navbar ul{
@@ -156,7 +161,7 @@ h5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin: 7.5rem 0;
 }
 
 .contact h3{
@@ -166,6 +171,7 @@ h5{
 .contact form{
     display: flex;
     flex-direction: column;
+    padding-bottom: 4rem;
 }
 
 .contact form input{
@@ -187,4 +193,74 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.footer-top{
+    padding: 0 1.5rem;
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.footer-top div{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer-top h3{
+    margin-left: 1rem;
+}
+
+.button2{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #3C2313;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.footer-top input{
+        width: 271px;
+        height: 40px;
+        border: none;
+        border-radius: 15px;
+        padding-left: 1rem;
+}
+
+.footer-main{
+    background-color: #3C2313;
+    color: white;
+    padding: 2.3rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-boxContainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-boxContainer h3{
+    font-weight: bolder;
+}
+
+.footer-boxContainer div{
+    margin-left: 1.5rem;
+}
+
+.footer-boxContainer:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.footer-bottom{
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 2rem;
 }
