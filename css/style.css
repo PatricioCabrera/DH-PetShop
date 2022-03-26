@@ -2,11 +2,14 @@
 
 *{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 html{
     font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 h2{
@@ -38,13 +41,10 @@ h5{
     padding: 0 9rem;
 }
 
-.fa-solid{
-    color: white;
-}
-
 .top-bar ul{
     list-style: none;
     display: flex;
+    padding-left: 0;
 }
 
 .top-bar ul li{
@@ -54,6 +54,42 @@ h5{
 .top-bar ul li a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+.top-bar .dropdown-content{
+    position: absolute;
+    top: 19px;
+    display: none;
+    flex-direction: column;
+    background-color: #222222;
+}
+
+.top-bar .dropdown-content a{
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+}
+
+.top-bar .dropdown-content a:nth-child(1){
+    padding-top: 0.5rem;
+}
+
+.top-bar .dropdown-content a:last-child{
+    padding-bottom: 0.5rem;
+}
+
+.top-bar ul li:nth-child(1):hover .dropdown-content{
+    display: flex;
+}
+
+.top-bar ul li:nth-child(2):hover .dropdown-content{
+    display: flex;
+}
+
+.top-bar .dropdown-content a:hover{
+    background-color: blue;
 }
 
 .navbar{
@@ -82,6 +118,19 @@ h5{
 .navbar ul li a{
     text-decoration: none;
     color: white;
+    padding-left: 1.6rem;
+}
+
+.navbar ul li a:hover .fa-solid{
+    display: inline-block;
+}
+
+.navbar ul li a:hover{
+    padding-left: 0;
+}
+
+.navbar .fa-solid{
+    display: none;
 }
 
 .hero{
@@ -150,6 +199,21 @@ h5{
     flex-direction: column;
     background-color: #FBFAF6;
     margin: 1rem;
+}
+
+/* @keyframes card {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+} */
+
+.products-card:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 0.2s;
 }
 
 .products-card h4{
