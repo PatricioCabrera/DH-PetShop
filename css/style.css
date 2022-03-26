@@ -171,6 +171,11 @@ h5{
     border-radius: 6px;
 }
 
+.button:hover, button:hover, .button2:hover{
+    background-color: #e9b568;
+    transition: background-color 0.2s;
+}
+
 .hero-content .button{
     width: 40%;
     text-align: center;
@@ -358,4 +363,61 @@ button{
     background-color: black;
     text-align: center;
     height: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    header .top-bar{
+        display: none;
+    }
+
+    header .navbar{
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    header .navbar img{
+        margin: 0;
+    }
+
+    header .navbar nav{
+        display: none;
+    }
+
+    header .navbar .fa-solid{
+        display: inline-block;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    header .hero{
+        justify-content: center;
+    }
+
+    main .products-content{
+        flex-wrap: wrap;
+    }
+
+    .contact .button-area{
+        width: 100vw;
+    }
+
+    .contact .button-area button{
+        width: 45%;
+    }
+
+    footer .footer-top{
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+
+    footer .footer-main{
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+
+    footer .footer-main .footer-logo{
+        padding-bottom: 1rem;
+    }
 }
